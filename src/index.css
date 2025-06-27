@@ -1,0 +1,66 @@
+:root {
+    --portfolio-background-color: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
+    /* radial-gradient( circle farthest-corner at 10% 20%,  rgba(33,115,130,1) 1.4%, rgba(35,39,124,1) 90% ); */
+    /*radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
+    linear-gradient( 110.2deg,  rgba(54,197,240,1) 8.2%, rgba(74,21,75,1) 92.4% )
+    */
+    --background: 234 84% 10%;
+    --background-dark-blue: 234 84% 14%;
+    --foreground: 206 69% 90%;
+    
+  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-icon: url(images/svg/Caret_down_font_awesome_whitevariation.svg);
+  --option-bg: white;
+  --select-bg: rgba(255, 255, 255, 0.2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    scroll-behavior: smooth;
+}
+
+.mg-top-2 {
+    margin-top: 2rem;
+}
+
+.title-center {
+    text-align: center;
+}
+
+
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+    font-size: 0.9em;
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+      linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    color: white;
+    border-radius: 0.25em;
+    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    &::-ms-expand {
+      display: none;
+    }
+    &:focus {
+      outline: none;
+    }
+    option {
+      color: inherit;
+      background: var(--background);
+
+    }
+  }
+  

@@ -1,0 +1,4 @@
+npm i @chakra-ui/react @emotion/react @emotion/styled framer-motion
+npm install @tiptap/react @tiptap/pm @tiptap/starter-kit
+
+** Install Tailwind Css in your for project for full responsive page ***
