@@ -2,8 +2,8 @@ import "../styles/home.scss";
 
 export const Footer = () => {
     return (
-        <footer className="app-footer">
-            <h1>Footer</h1>
+        <footer className="app-footer text-center">
+            <h1>Generock Studios All rights reserverd</h1>
         </footer>
     )
 }

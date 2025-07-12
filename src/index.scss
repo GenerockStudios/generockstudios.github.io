@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --portfolio-background-color: radial-gradient( circle 975px at 2.6% 48.3%,  rgba(0,8,120,1) 0%, rgba(95,184,224,1) 99.7% );
     /* radial-gradient( circle farthest-corner at 10% 20%,  rgba(33,115,130,1) 1.4%, rgba(35,39,124,1) 90% ); */
@@ -9,7 +13,6 @@
     --foreground: 206 69% 90%;
     
   --arrow-bg: rgba(255, 255, 255, 0.3);
-  --arrow-icon: url(images/svg/Caret_down_font_awesome_whitevariation.svg);
   --option-bg: white;
   --select-bg: rgba(255, 255, 255, 0.2);
 }
@@ -20,9 +23,12 @@
     box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     height: 100%;
-    background-color: hsl(var(--background));
     color: hsl(var(--foreground));
     scroll-behavior: smooth;
 }
@@ -45,8 +51,6 @@ select {
     /* Personalize */
     padding: 0.5rem 3rem 0.5rem 0.5rem;
     font-size: 0.9em;
-    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
-      linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
     color: white;
     border-radius: 0.25em;
     box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
